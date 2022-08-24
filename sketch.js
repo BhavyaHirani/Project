@@ -25,7 +25,7 @@ function preload(){
 
     bonusImg = loadImage("star.png");
 
-    gameOverImg = loadImage("GameOver.png");
+    gameOverImg = loadImage("gameOver.png");
     restartImg = loadImage("restart.png");
 
 }
@@ -86,7 +86,7 @@ function draw() {
         
         if(obstaclesGroup.isTouching(rocket)){
             obstacle.destroy();
-            bonus.destroy();        
+            //bonus.destroy();        
             gameState = END
         }
         if(bonusGroup.isTouching(rocket)){
